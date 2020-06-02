@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  height: 85vh;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0.78),
+      rgba(0, 0, 0, 0.78)),
+    url("/img/header.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+
+nav {
+  height: 10vh;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.hero-block {
+  width: 100vw;
+  height: 70vh;
+  font-family: 'Courgette', cursive;
+}
+
+h3,
+.h6 {
+  font-family: 'Courgette', cursive;
+}
+
+.card {
+  outline: none;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+footer {
+  background-color: black;
+}

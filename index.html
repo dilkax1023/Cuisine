@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link pour font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <!-- link pour bootstrap.min.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <!-- link pour homepage.css -->
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <!-- link pour main.css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Cui'zine</title>
+  </head>
+
+  <body>
+    <!-- header  -->
+    <header>
+      <!--navbar  -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Cui'zine</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Equipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- les grand text dans la landpage -->
+      <div class="hero-block d-flex flex-column justify-content-center align-items-center">
+        <img src="./img/logo_square_white.png" class="mb-3" style="width: 80px;" alt="" />
+        <h1 class="mb-3 text-light">Cui'zine</h1>
+        <h3 class="text-light">Le mag cuisine</h3>
+      </div>
+      </div>
+    </header>
+
+    <!-- section -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center p-5">Derniers articles</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- c'est pour séparer en deux column sur l'écran large 9:3 
+        et pour avoir 12 columns dans l'ecran au dessous de 1200px -->
+          <div class="col-12 col-lg-9">
+            <div class="row">
+              <div class="col">
+                <div class="card border-light mb-3">
+                  <div class="row">
+                    <!-- pour obtenir une propotion de 5:7 sur l'ecran medieum et 
+                    une propotion de 4:8 sur l'ecran large et extra-large -->
+                    <div class="col-12 col-md-5 col-lg-4 d-flex align-items-center">
+                      <img src="./img/articles/suzette/suzette-header.jpg" class="card-img-top cardImg" alt="...">
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-8">
+                      <div class="card-body">
+                        <h3>Chez suzette, la nouvelle crêperie qui fait parler d'elle</h3>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. At odit
+                          ut
+                          neque illum quia asperiores debitis facere explicabo velit iste et dolorum impedit dolor animi
+                          quidem.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="card border-light mb-3">
+                  <div class="row">
+                    <!-- la meme logic -->
+                    <div class="col-12 col-md-5 col-lg-4 d-flex align-items-center">
+                      <img src="./img/articles/metro/metro-header.jpg" class="card-img-top cardImg" alt="...">
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-8">
+                      <div class="card-body">
+                        <h3>Le Métro dessert</h3>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                          Molestiae
+                          doloribus iste laboriosam harum quaerat, voluptatum, culpa cupiditate quod porro est ducimus
+                          provident
+                          sit? Quis dolore maiores iure. Reiciendis, esse? Obcaecati sint ab assumenda officia illum.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="card border-light mb-3">
+                  <div class="row">
+                    <div class="col-12 col-md-5 col-lg-4 d-flex align-items-center">
+                      <img src="./img/articles/vitaly/vitaly-header.jpg" class="card-img-top h-80 cardImg" alt="...">
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-8">
+                      <div class="card-body">
+                        <h3>Vitality, le végan italien</h3>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                          sunt
+                          consequuntur dicta aspernatur adipisci necessitatibus suscipit eos facilis repellendus ea.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- c'est l'espace pour les form-group sur l'ecran large -->
+          <div class="col-lg-3 mt-5 d-none d-lg-block">
+            <form>
+              <div class="form-group">
+                <div class="form-row mb-4">
+                  <!--form-recherche-->
+                  <div class="col-12">
+                    <label for="recherche" class="h6 mb-2">Recherche</label>
+                    <input type="search" class="form-control d-block" id="recherche" placeholder="Recherche..">
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-block btn-outline-dark">OK</button>
+                  </div>
+                </div>
+                <div class="form-row mb-3">
+                  <!--form-newsletter-->
+                  <div class="col-12">
+                    <label for="email" class="h6">Newsletter</label>
+                    <input type="email" class="form-control d-block" id="email" placeholder="Email..">
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-block btn-outline-dark">S'inscrire</button>
+                  </div>
+                </div>
+                <div class="form-row mb-3">
+                  <!-- row-icon -->
+                  <p class="mb-2 h6">Partager</p>
+                  <div class="col-12">
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><a href="#"><i
+                            class="fab fa-facebook-square fa-lg text-dark"></i></a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-lg text-dark"></i></a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-youtube-square fa-lg text-dark"></i></a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-twitter-square fa-lg text-dark"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- footer -->
+    <footer class="text-light p-5">
+      <div class="container">
+        <div class="row">
+          <!--une row de 3 columns en large screen et une row de 12 columns
+          sur les screens xs,sm,md-->
+          <div class="col-12 col-lg-4">
+            <h3>Catégories</h3>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light">Revues</a></li>
+              <li><a href="#" class="text-light">Recettes</a></li>
+              <li><a href="#" class="text-light">Decouvertes</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h3>Archives</h3>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light">2019</a></li>
+              <li><a href="#" class="text-light">2018</a></li>
+              <li><a href="#" class="text-light">2017</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="row">
+              <form>
+                <div class="form-group">
+                  <label for="email" class="h6">Newsletter</label>
+                  <div class="form-row">
+                    <div class="col-7">
+                      <input type="email" class="form-control d-inline" id="email" placeholder="Email..">
+                    </div>
+                    <div class="row-5">
+                      <button class="col-auto btn btn-outline-dark d-inline text-light">S'inscrire</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="row">
+              <p class="mb-1 h6">Partager</p>
+            </div>
+            <div class="row">
+              <!--icons-->
+              <ul class="list-inline mt-0">
+                <li class="list-inline-item mx-0"><a href="#"><i
+                      class="fab fa-facebook-square fa-lg text-light"></i></a></li>
+                <li class="list-inline-item mx-0"><a href="#"><i class="fab fa-instagram fa-lg text-light"></i></a></li>
+                <li class="list-inline-item mx-0"><a href="#"><i class="fab fa-youtube-square fa-lg text-light"></i></a>
+                </li>
+                <li class="list-inline-item"><a href="#"><i class="fab fa-twitter-square fa-lg text-light"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+  </body>
+  <!-- script link pour jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <!-- script link pour popper -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- scipt link pour bootstrap.min.js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+
+</html>
