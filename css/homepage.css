@@ -10,7 +10,7 @@ header {
   background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.78),
       rgba(0, 0, 0, 0.78)),
-    url("/img/header.jpg");
+    url("../img/header.jpg");
   background-size: cover;
   background-position: top;
 }
