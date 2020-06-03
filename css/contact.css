@@ -1,0 +1,17 @@
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  max-width: 800px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  max-width: 800px;
+}
+
+.contact h1 {
+  font-family: 'Courgette', cursive;
+}

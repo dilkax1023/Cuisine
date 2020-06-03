@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <!-- link pour homepage.css -->
-    <link rel="stylesheet" href="./css/homepage.css" />
+    <link rel="stylesheet" href="./css/team.css" />
     <!-- link pour main.css -->
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Cui'zine</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Team</title>
   </head>
+
+
 
   <body>
     <!-- header  -->
-    <header>
+    <header class="header">
       <!--navbar  -->
-      <nav class="navbar navbar-expand-lg navbar-dark mb-1">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="index.html">Cui'zine</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -30,10 +32,10 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
-              </li>
               <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
                 <a class="nav-link" href="team.html">Equipe</a>
               </li>
               <li class="nav-item">
@@ -48,99 +50,76 @@
       </nav>
       <!-- les grand text dans la landpage -->
       <div class="hero-box">
-        <div class="inner-box text-center">
-          <img src="./img/logo_square_white.png" class="mb-3" style="width: 80px;" alt="logo" />
-          <h1 class="mb-3 text-light text-center">Cui'zine</h1>
-          <h3 class="text-light text-center">Le mag cuisine</h3>
+        <div class="inner-box">
+          <h1 class="mb-3 text-light">On apprend en enseignant</h1>
+          <h2 class="text-light">Un pour tous et tous pour un</h2>
         </div>
       </div>
     </header>
 
-    <!-- section -->
-    <section class="mb-5">
-      <div class="container">
+    <main class="my-5">
+      <div class="container mt-4">
         <div class="row">
-          <div class="col">
-            <h1 class="text-center p-5">Derniers articles</h1>
-          </div>
-        </div>
-
-        <div class="row">
-          <!-- c'est pour séparer en deux column sur l'écran large 9:3 
-        et pour avoir 12 columns dans l'ecran au dessous de 1200px -->
           <div class="col-12 col-lg-9">
             <div class="row">
-              <div class="col">
-                <div class="card border-light mb-3">
-                  <div class="row">
-                    <!-- pour obtenir une propotion de 5:7 sur l'ecran medieum et 
-                    une propotion de 4:8 sur l'ecran large et extra-large -->
-                    <div class="col-12 col-md-5 col-lg-4 d-flex align-items-center">
-                      <img src="./img/articles/suzette/suzette-header.jpg" class="card-img-top cardImg" alt="sezette">
-                    </div>
-                    <div class="col-12 col-md-7 col-lg-8">
-                      <div class="card-body">
-                        <h3>Chez suzette, la nouvelle crêperie qui fait parler d'elle</h3>
-                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. At odit
-                          ut
-                          neque illum quia asperiores debitis facere explicabo velit iste et dolorum impedit dolor animi
-                          quidem.
-                        </p>
-                      </div>
-                    </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-center border-0 d-flex flex-column align-items-center mx-3">
+                  <img class="card-img-top rounded-circle" src="./img/team/tony.jpg" alt="photo de Tony">
+                  <div class="card-body">
+                    <h2 class="card-title">Tony</h2>
+                    <p class="card-text text-muted">Rédacteur en chef</p>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <div class="card border-light mb-3">
-                  <div class="row">
-                    <!-- la meme logic -->
-                    <div class="col-12 col-md-5 col-lg-4 d-flex align-items-center">
-                      <img src="./img/articles/metro/metro-header.jpg" class="card-img-top cardImg" alt="metro-header">
-                    </div>
-                    <div class="col-12 col-md-7 col-lg-8">
-                      <div class="card-body">
-                        <h3>Le Métro dessert</h3>
-                        <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                          Molestiae
-                          doloribus iste laboriosam harum quaerat, voluptatum, culpa cupiditate quod porro est ducimus
-                          provident
-                          sit? Quis dolore maiores iure. Reiciendis, esse? Obcaecati sint ab assumenda officia illum.
-                        </p>
-                      </div>
-                    </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-center border-0 d-flex flex-column align-items-center mx-3">
+                  <img class="card-img-top rounded-circle" src="./img/team/clementine.jpg" alt="photo de clementine">
+                  <div class="card-body">
+                    <h2 class="card-title">Clémentine</h2>
+                    <p class="card-text text-muted">Journaliste culinaire</p>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <div class="card border-light mb-3">
-                  <div class="row">
-                    <div class="col-12 col-md-5 col-lg-4 d-flex align-items-center">
-                      <img src="./img/articles/vitaly/vitaly-header.jpg" class="card-img-top h-80 cardImg" alt="vitaly">
-                    </div>
-                    <div class="col-12 col-md-7 col-lg-8">
-                      <div class="card-body">
-                        <h3>Vitality, le végan italien</h3>
-                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                          sunt
-                          consequuntur dicta aspernatur adipisci necessitatibus suscipit eos facilis repellendus ea.
-                        </p>
-                      </div>
-                    </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-center border-0 d-flex flex-column align-items-center mx-3">
+                  <img class="card-img-top rounded-circle" src="./img/team/antoine.jpg" alt="photo d'antoine">
+                  <div class="card-body">
+                    <h2 class="card-title">Antoine</h2>
+                    <p class="card-text text-muted">Gouteur professionnel</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-center border-0 d-flex flex-column align-items-center mx-3">
+                  <img class="card-img-top rounded-circle" src="./img/team/tony.jpg" alt="photo de Tony">
+                  <div class="card-body">
+                    <h2 class="card-title">Tony</h2>
+                    <p class="card-text text-muted">Rédacteur en chef</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-center border-0 d-flex flex-column align-items-center mx-3">
+                  <img class="card-img-top rounded-circle" src="./img/team/clementine.jpg" alt="photo de clementine">
+                  <div class="card-body">
+                    <h2 class="card-title">Clémentine</h2>
+                    <p class="card-text text-muted">Journaliste culinaire</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-center border-0 d-flex flex-column align-items-center mx-3">
+                  <img class="card-img-top rounded-circle" src="./img/team/antoine.jpg" alt="photo d'antoine">
+                  <div class="card-body">
+                    <h2 class="card-title">Antoine</h2>
+                    <p class="card-text text-muted">Gouteur professionnel</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- c'est l'espace pour les form-group sur l'ecran large -->
-          <div class="col-lg-3 mt-5 d-none d-lg-block">
+          <div class="col-lg-3 my-5 d-none d-lg-block">
             <form>
               <div class="form-group">
                 <div class="form-row mb-4">
@@ -184,7 +163,68 @@
             </form>
           </div>
         </div>
-    </section>
+      </div>
+    </main>
+
+
+    <!-- <div class="card text-center border-0 d-flex flex-column align-items-center">
+            <img class="card-img-top rounded-circle" src="./img/team/tony.jpg" alt="photo de Tony">
+            <div class="card-body">
+              <h2 class="card-title">Tony</h2>
+              <p class="card-text text-muted">Rédacteur en chef</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center border-0 d-flex flex-column align-items-center">
+            <img class="card-img-top rounded-circle" src="./img/team/clementine.jpg" alt="photo de clementine">
+            <div class="card-body">
+              <h2 class="card-title">Clémentine</h2>
+              <p class="card-text text-muted">Journaliste culinaire</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center border-0 d-flex flex-column align-items-center">
+            <img class="card-img-top rounded-circle" src="./img/team/antoine.jpg" alt="photo d'antoine">
+            <div class="card-body">
+              <h2 class="card-title">Antoine</h2>
+              <p class="card-text text-muted">Gouteur professionnel</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card text-center border-0 d-flex flex-column align-items-center">
+            <img class="card-img-top rounded-circle" src="./img/team/tony.jpg" alt="photo de Tony">
+            <div class="card-body">
+              <h2 class="card-title">Tony</h2>
+              <p class="card-text text-muted">Rédacteur en chef</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card text-center border-0 d-flex flex-column align-items-center">
+            <img class="card-img-top rounded-circle" src="./img/team/antoine.jpg" alt="photo de clementine">
+            <div class="card-body">
+              <h2 class="card-title">Clémentine</h2>
+              <p class="card-text text-muted">Journaliste culinaire</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card text-center border-0 d-flex flex-column align-items-center">
+            <img class="card-img-top rounded-circle" src="./img/team/antoine.jpg" alt="photo d'antoine">
+            <div class="card-body">
+              <h2 class="card-title">Antoine</h2>
+              <p class="card-text text-muted">Gouteur professionnel</p>
+            </div>
+          </div>
+        </div> -->
+
+
+
+
+
 
     <!-- footer -->
     <footer class="text-light p-5">
@@ -242,7 +282,6 @@
         </div>
     </footer>
 
-
     <!-- script link pour jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -255,7 +294,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
-
   </body>
 
 </html>
