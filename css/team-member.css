@@ -13,21 +13,11 @@
   height: 70vh;
 }
 
-.inner-box h2 {
+.inner-box h3 {
   animation: moveLeft 1s ease-out;
 }
 
-nav {
-  background-color: rgba(0, 0, 0, .3);
-}
-
-
-
-.card img {
-  max-height: 60%;
-  max-width: 60%;
-}
-
-.card .card-title {
-  font-family: 'Courgette', cursive;
+.rounded-circle {
+  max-width: 250px;
+  max-height: 250px;
 }

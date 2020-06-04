@@ -1,0 +1,33 @@
+.courgette {
+  font-family: 'Courgette', cursive;
+}
+
+.header {
+  height: 80vh;
+  background-image: url("../img/articles/suzette/suzette-header.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.fixed-top {
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.hero-box {
+  height: 70vh;
+}
+
+.inner-box h1 {
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.rounded-circle {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
