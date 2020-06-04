@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+h3,
+.h6 {
+  font-family: 'Courgette', cursive;
+}
+
+header {
+  height: 95vh;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0.70),
+      rgba(0, 0, 0, 0.70)),
+    url("../img/header.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+nav {
+  height: 10vh;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+}
+
+.hero-box {
+  width: 100vw;
+  height: 85vh;
+  font-family: 'Courgette', cursive;
+}
+
+.inner-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-box img {
+  animation: moveDown 1s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.hero-box h1 {
+  animation: moveRight 1s ease-out;
+}
+
+.hero-box h3 {
+  animation: moveLeft 1s ease-out;
+}
+
+footer {
+  background-color: black;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-400px);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
